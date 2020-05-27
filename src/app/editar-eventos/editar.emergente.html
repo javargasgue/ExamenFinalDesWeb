@@ -1,0 +1,16 @@
+<h1 mat-dialog-title class="Centrar"> <b> Editar Evento </b> </h1>
+    <div></div>
+    <div mat-dialog-content>
+        <mat-form-field class="seleccion">
+            <mat-label >Seleccione el Evento</mat-label>
+            <mat-select [(ngModel)]="data.nombreEvento"> 
+                <mat-option type="text" matInput *ngFor="let nombre of data.Evento" [value]="nombre.nombreEvento" > 
+                    {{ nombre.nombreEvento }}
+                </mat-option>    
+            </mat-select>
+        </mat-form-field>
+    </div>   
+<div mat-dialog-actions>
+    <button mat-button class="boton1" (click)="onNoClick()">Regresar</button>
+    <button mat-button class="boton2" [mat-dialog-close]="data" cdkFocusInitial >Editar</button>
+</div>

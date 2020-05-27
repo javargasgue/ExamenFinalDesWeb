@@ -1,0 +1,21 @@
+.Centrar{
+    text-align: center;
+    ;
+}
+.CentrarTitulo{
+    margin: auto;    
+    color: white;
+}
+.ColorFondo{
+    background-color: black;
+    height: 50px;
+    border-radius: 20px;
+
+}
+.Grande{
+    height: 50px;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+

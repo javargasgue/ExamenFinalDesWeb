@@ -1,0 +1,43 @@
+.ColorTitulo{
+    color: white;
+}
+.ColorFondo{
+    background-color: #3700B3;
+    height: 36px;
+    border-radius: 10px;
+}
+.Grande{
+    height: 46px;
+    background-color: white;
+    width: 75%;
+    margin: auto;
+}
+.boton{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background-color: #C0392B ;
+}
+.boton1{
+    width: 100px;
+    height: 26px;
+    text-align: center;
+    background-color: #C0392B ;
+    margin: 5px;
+    border-radius: 15px;
+}    
+.boton2{
+    width:  100px;
+    height: 32px;
+    text-align: center;
+    background-color: #21618C ;
+    margin: 5px;
+    border-radius: 15px;
+}
+.Centrar{
+    text-align: center;
+    margin: auto;
+}
+.seleccion{
+    width:  250px;
+}

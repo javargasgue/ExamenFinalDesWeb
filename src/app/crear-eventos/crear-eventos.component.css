@@ -1,0 +1,53 @@
+.ColorTitulo{
+    color: white;
+}
+.ColorFondo{
+    background-color: #3700B3;
+    height: 36px;
+    border-radius: 10px;
+}
+.example-form {
+    min-width: 100px;
+    max-width: 400px;
+    width: 100%;
+  }
+.example-full-width {
+    width: 35%;
+  }
+.Grande{
+  height: 46px;
+  background-color: white;
+  width: 75%;
+  margin: auto;
+}
+.boton{
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background-color: #21618C ;
+}    
+
+.boton1{
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background-color: #21618C ;
+}    
+.boton2{
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background-color: green ;
+}
+.tabla{
+  width: 100px;    
+  width: 80%;
+  margin: auto;
+  align-content: center;
+}
+.example-full-width {
+  width: 90%;
+}
+td {
+  padding-right: 50px;
+}

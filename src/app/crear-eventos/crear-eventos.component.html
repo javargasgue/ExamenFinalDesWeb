@@ -1,0 +1,63 @@
+<mat-toolbar color="primary" class="Grande">
+    <mat-toolbar class="ColorFondo"> <span class="ColorTitulo">Componente: Crear Eventos</span> </mat-toolbar>
+</mat-toolbar>  
+
+<table class="tabla"><tr>
+  <td>
+    <form class="example-form">
+      <mat-form-field  class="example-full-width">
+        <mat-label >Nombre Evento</mat-label>
+        <span matPrefix >Nombre Evento: &nbsp;</span>
+        <input type="text" matInput placeholder="Deporte Favorito" [(ngModel)]="nombreEvento" [ngModelOptions]="{standalone: true}">
+        <mat-icon matSuffix>sports_basketball</mat-icon>
+      </mat-form-field>
+    </form>
+  </td>
+  <td>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Descrición del Evento</mat-label>
+        <span matPrefix>Descrición del Evento: &nbsp;</span>
+        <input type="text" matInput placeholder="Descrición detallada" [(ngModel)]="descripcionEvento" [ngModelOptions]="{standalone: true}">
+        <mat-icon matSuffix>format_align_justify</mat-icon>
+      </mat-form-field>
+    </form>
+  </td>
+</tr></table>
+
+<table class="tabla"><tr>
+  <td>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Fecha del Evento</mat-label>
+        <span matPrefix>Fecha del Evento: &nbsp;</span>
+        <input type="text" matInput placeholder="Fecha del Evento" [(ngModel)]="fechaEvento" [ngModelOptions]="{standalone: true}">
+        <mat-icon matSuffix>date_range</mat-icon>
+      </mat-form-field>
+    </form>
+  </td>
+  <td>
+    <mat-form-field class="example-form">
+      <mat-label>Seleccione El Estado</mat-label>
+      <span matPrefix>Estado del Evento: &nbsp;</span>
+      <select matNativeControl id="mySelectId" [(ngModel)]="estadoEvento" [ngModelOptions]="{standalone: true}">
+        <option value="" disabled selected></option>
+        <option value="Iniciado">Iniciado</option>
+        <option value="En_Curso">En_Curso</option>
+        <option value="Finalizado">Finalizado</option>
+      </select>
+      <mat-icon matSuffix>dynamic_feed</mat-icon>
+    </mat-form-field>
+  </td>
+</tr></table>
+<td>
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle class="boton" (click)="limpiar()" > <b>Limpiar</b> </mat-button-toggle>
+  </mat-button-toggle-group>
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle class="boton1" (click)="guardarEvento()" > <b>Nuevo</b> </mat-button-toggle>
+  </mat-button-toggle-group>
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle class="boton2" (click)="editarEventos()" > <b>Actualizar</b> </mat-button-toggle>
+  </mat-button-toggle-group>
+</td>

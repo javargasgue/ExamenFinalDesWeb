@@ -1,0 +1,14 @@
+<app-crear-eventos 
+    [nombreEvento]      = "nombreEvento"
+    [descripcionEvento] = "descripcionEvento"
+    [fechaEvento]       = "fechaEvento"
+    [estadoEvento]      = "estadoEvento"
+></app-crear-eventos>
+  
+<mat-toolbar color="primary" class="Grande">
+    <mat-toolbar class="ColorFondo"> <span class="ColorTitulo">Componente: Editar Eventos</span> </mat-toolbar>
+</mat-toolbar>  
+
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="Editar" class="boton" (click)="abrirVentanaEmergente()"> <b>Editar</b> </mat-button-toggle>
+</mat-button-toggle-group>

@@ -1,0 +1,20 @@
+table {
+    width: 70%;
+    text-align: justify;
+    margin: auto;    
+}
+.ColorTitulo{
+    color: white;
+}
+.ColorFondo{
+    background-color: #3700B3;
+    height: 36px;
+    border-radius: 10px;
+}
+.Grande{
+    height: 46px;
+    background-color: white;
+    width: 75%;
+    margin: auto;
+}
+    

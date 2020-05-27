@@ -1,0 +1,30 @@
+<mat-toolbar color="primary" class="Grande">
+    <mat-toolbar class="ColorFondo"> <span class="ColorTitulo">Componente: Consulta Eventos</span> </mat-toolbar>
+</mat-toolbar>  
+<div>
+        <table  mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="nombreEvento">
+                <th mat-header-cell *matHeaderCellDef><b>Nombre</b> </th>
+                <td mat-cell *matCellDef="let element"> {{element.nombreEvento}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="descripcionEvento">
+                <th mat-header-cell *matHeaderCellDef><b>Descripcion</b> </th>
+                <td mat-cell *matCellDef="let element"> {{element.descripcionEvento}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="fechaEvento">
+                <th mat-header-cell *matHeaderCellDef><b>Fecha</b> </th>
+                <td mat-cell *matCellDef="let element"> {{element.fechaEvento}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="estadoEvento">
+                <th mat-header-cell *matHeaderCellDef><b>Estado</b> </th>
+                <td mat-cell *matCellDef="let element"> {{element.estadoEvento}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+</div>
+  
