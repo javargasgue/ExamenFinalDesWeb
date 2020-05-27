@@ -22,7 +22,8 @@ export class CrearEventosComponent implements OnInit {
   }
   guardarEvento(){
     if(this.nombreEvento === undefined || this.descripcionEvento === undefined || this.fechaEvento === undefined || this.estadoEvento === undefined ||
-       this.nombreEvento === null || this.descripcionEvento === null || this.fechaEvento === null || this.estadoEvento === null ){
+       this.nombreEvento === null || this.descripcionEvento === null || this.fechaEvento === null || this.estadoEvento === null ||
+       this.nombreEvento === "" || this.descripcionEvento === "" || this.fechaEvento === "" || this.estadoEvento === ""  ){
         var r = alert("Datos Incompletos");
     }
     else{
@@ -33,11 +34,13 @@ export class CrearEventosComponent implements OnInit {
         estadoEvento :      this.estadoEvento
       })); 
       this.limpiar();     
+      var r = alert("Registro exitoso");
     }
   }
   editarEventos(){
     if(this.nombreEvento === undefined || this.descripcionEvento === undefined || this.fechaEvento === undefined || this.estadoEvento === undefined ||
-      this.nombreEvento === null || this.descripcionEvento === null || this.fechaEvento === null || this.estadoEvento === null ){
+      this.nombreEvento === null || this.descripcionEvento === null || this.fechaEvento === null || this.estadoEvento === null ||
+      this.nombreEvento === "" || this.descripcionEvento === "" || this.fechaEvento === "" || this.estadoEvento === ""  ){
        var r = alert("Datos Incompletos");
    }
    else{
@@ -48,6 +51,7 @@ export class CrearEventosComponent implements OnInit {
       estadoEvento :      this.estadoEvento
     }));
     this.limpiar(); 
+    var r = alert("Registro actualizado");
     }
   }
   limpiar(){
@@ -55,5 +59,7 @@ export class CrearEventosComponent implements OnInit {
     this.descripcionEvento = "" ;
     this.fechaEvento = "" ;
     this.estadoEvento = "" ;
+    var r = alert("Campos limpios");
   }
+
 }
