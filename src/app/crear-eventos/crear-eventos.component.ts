@@ -14,6 +14,7 @@ export class CrearEventosComponent implements OnInit {
   @Input() descripcionEvento : string ;
   @Input() fechaEvento       : string ;
   @Input() estadoEvento      : string ;
+  validacion =0;
 
   constructor( private store: Store<AppState> ) {
   }
@@ -33,6 +34,7 @@ export class CrearEventosComponent implements OnInit {
         fechaEvento :       this.fechaEvento,
         estadoEvento :      this.estadoEvento
       })); 
+      this.validacion=1;
       this.limpiar();     
       var r = alert("Registro exitoso");
     }
@@ -50,7 +52,8 @@ export class CrearEventosComponent implements OnInit {
       fechaEvento :       this.fechaEvento,
       estadoEvento :      this.estadoEvento
     }));
-    this.limpiar(); 
+   this.validacion=1;
+   this.limpiar(); 
     var r = alert("Registro actualizado");
     }
   }
@@ -59,7 +62,10 @@ export class CrearEventosComponent implements OnInit {
     this.descripcionEvento = "" ;
     this.fechaEvento = "" ;
     this.estadoEvento = "" ;
-    var r = alert("Campos limpios");
+    if (this.validacion===0){
+   var r = alert("Campos limpios");
+   }
+   this.validacion=0;
   }
 
 }
