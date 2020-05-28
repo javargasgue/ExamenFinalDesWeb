@@ -32,7 +32,7 @@ export class CrearEventosComponent implements OnInit {
         descripcionEvento : this.descripcionEvento,
         fechaEvento :       this.fechaEvento,
         estadoEvento :      this.estadoEvento
-      })); 
+      }));
       this.limpiar();     
       var r = alert("Registro exitoso");
     }
@@ -44,7 +44,7 @@ export class CrearEventosComponent implements OnInit {
        var r = alert("Datos Incompletos");
    }
    else{
-     this.store.dispatch( editarEventos({ 
+    this.store.dispatch( editarEventos({ 
       nombreEvento :      this.nombreEvento,
       descripcionEvento : this.descripcionEvento,
       fechaEvento :       this.fechaEvento,
